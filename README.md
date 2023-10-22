@@ -61,7 +61,7 @@ The primary use case for this code is to facilitate trusted exchanges between pa
 - Represents a key that allows a bridge to real life use.
 - The confirmation key can be given to a party by the original owner that locked it's asset to a safe handled by the contract
 
-**Creation of a Contract using TrustLink's API**
+## Creation of a Contract using TrustLink's API
 ![Image 22-10-2023 at 09 13](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/f14667f3-d213-402b-898c-7c0d7059636a)
 
 
