@@ -19,6 +19,50 @@ The primary use case for this code is to facilitate trusted exchanges between pa
 - *Confirmation Mechanism*: The code supports a confirmation mechanism where participants can confirm certain steps within the contract. This is useful for multi-party agreements where consensus or verification is required.
 
 
+## Structures
+
+**Structure Architecture and Links**
+![Image 22-10-2023 at 08 56](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/15eb4dc3-b017-4a4a-96f9-acfe82d94adc)
+
+
+
+
+### TrustedContract
+- Represents the main contract structure.
+- Manages a trusted exchange.
+- Contains information about the contract's creation time, expiration time, contract steps, expiration actions, and more immutably.
+- Once deployed the contract can **never** be changed.
+### TrustedContractHandler
+- Contains a table of items, confirmations, keys, and utility options for methods.
+- Needs to be mutable to manage contract states and always follows the immutables rules set by his corresponding trusted contract
+### ContractState
+- Wrapper for the index that represents the contract's state.
+- Contains information about the current step, whether the contract is finished, and whether it's expired.
+### ContractDescriptor
+- Describes each step of a contract.
+- Mutable during the setup phase and and used to create the immutable rules of the trusted contract.
+- Contains steps, expiration actions, and expiration time.
+### ContractStep
+- Describes each step of a contract.
+- Contains requirements and actions for a step.
+- A contract is composed of a sequence of ContractStep that all needs to be checked in order to validate the contract.
+### Requirement
+- Represents a requirement to be fulfilled by contract participants.
+- Contains type, item ID, and wallet addresses to describe the requirement.
+- Can be added to the descriptor by the user depending on his needs.
+### Action
+- Represents an action that will be executed by the contract.
+- Contains type, wallet address, and item IDs to describe the action.
+- - Can be added to the descriptor by the user depending on his needs.
+### ItemContainer
+- Wraps a contained item with information about its owner and lock status.
+- Once locked the original owner can no longer retrieve until it is unlocked by the contract
+### ConfirmationKey
+- Represents a key that allows a bridge to real life use.
+- The confirmation key can be given to a party by the original owner that locked it's asset to a safe handled by the contract
+
+**Creation of a Contract using TrustLink's API**
+![Image 22-10-2023 at 09 13](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/f14667f3-d213-402b-898c-7c0d7059636a)
 
 
 ### Available Functions 
@@ -39,42 +83,3 @@ The primary use case for this code is to facilitate trusted exchanges between pa
 - confirm_step: Confirm a step in the contract.
 - confirmate_step_with_key: Confirm a step using a key.
 - cancel_contract: Cancel the contract and return items to their owners.
-
-## Structures
-
-**Structure Architecture and Links**
-![Image 22-10-2023 at 08 56](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/15eb4dc3-b017-4a4a-96f9-acfe82d94adc)
-
-
-
-
-### TrustedContract
-- Represents the main contract structure.
-- Manages a trusted exchange.
-- Contains information about the contract's creation time, expiration time, contract steps, expiration actions, and more.
-### TrustedContractHandler
-- Manages the state of a specific contract.
-- Contains a table of items, confirmations, keys, and utility options for methods.
-### ContractState
-- Wrapper for the index that represents the contract's state.
-- Contains information about the current step, whether the contract is finished, and whether it's expired.
-### ContractDescriptor
-- Describes each step of a contract.
-- Mutable during the setup phase and becomes immutable when used to create a contract.
-- Contains steps, expiration actions, and expiration time.
-### ContractStep
-- Describes each step of a contract.
-- Contains requirements and actions for a step.
-### Requirement
-- Represents a requirement to be fulfilled by contract participants.
-- Contains type, item ID, and wallet addresses.
-### Action
-- Represents an action that will be executed by the contract.
-- Contains type, wallet address, and item IDs.
-### ItemContainer
-- Wraps a contained item with information about its owner and lock status.
-### ConfirmationKey
-- Represents a key that allows a contract user to confirm a step.
-
-**Creation of a Contract using TrustLink's API**
-![Image 22-10-2023 at 09 13](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/f14667f3-d213-402b-898c-7c0d7059636a)
