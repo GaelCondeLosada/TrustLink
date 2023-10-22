@@ -1,0 +1,25 @@
+---
+compiled_package_info:
+  package_name: trusted_contract
+  address_alias_instantiation:
+    std: "0000000000000000000000000000000000000000000000000000000000000001"
+    sui: "0000000000000000000000000000000000000000000000000000000000000002"
+    trusted_contract: "0000000000000000000000000000000000000000000000000000000000000000"
+  source_digest: E230E9B6E67380A7D64638459E46D0A48EFA9B135C364F12ACF21EF350A4621F
+  build_flags:
+    dev_mode: true
+    test_mode: true
+    generate_docs: false
+    generate_abis: false
+    install_dir: ~
+    force_recompilation: false
+    lock_file: ~
+    additional_named_addresses: {}
+    fetch_deps_only: false
+    skip_fetch_latest_git_deps: false
+    default_flavor: ~
+    default_edition: ~
+    deps_as_root: false
+dependencies:
+  - MoveStdlib
+  - Sui

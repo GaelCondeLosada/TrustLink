@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    height: 100%;
+
+}
+
+.envelope{
+    background-color: aliceblue;
+    position: absolute;
+    color: black
+    
+}
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+        padding: 40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 50px;
+    }
+
+    .left, .right {
+        width: 45%;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .right {
+        background-color: #e0e0e0;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #2196F3;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        position: relative;
+        font-family: Inter, sans-serif;
+    }
+
+    .item:hover {
+        background-color: #1976D2;
+    }
+
+    .item i {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+        font-family: Inter, sans-serif;
+
+    }
+
+    .droppable {
+        border: 2px dashed #ccc;
+        padding: 10px;
+        min-height: 100px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    .w3{
+    background-color: #24126A;;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.sidebar{
+    height: 100%;
+    width: 200%;
+    background-color: #24126A;;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    color: aliceblue;
+}
+
+.trustlinks_pic{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.sidebar{
+    height: 100%;
+    width: 200%;
+    background-color: #24126A;;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    color: aliceblue;
+}
+
+.title{
+    font-family: Inter, sans-serif;
+}
+
+.contract_title{
+    font-family: sans-serif, Inter;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    text-decoration: underline;
+
+}
+
+.form{
+    position: relative;
+    top: 100px;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.chosen-select{
+    width: 250px;
+    background-color: #fff;
+    border-radius: 12px;
+    height: 20px;
+    font-size: 16px;
+    color: #2196F3;
+}
+
+.contact_selection{
+    width: 100px;
+    background-color: #fff;
+    border-radius: 12px;
+    height: 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+}
+
+select option{
+    color: #2196F3;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 12px;
+
+}
+
+.address_inp{
+    position: relative;
+    text-align: center;
+    top: 20px;
+    font-size: 16px;
+    font-family: sans-serif, Inter;
+}
+
+.inp{
+    position: relative;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.submit{
+    position: relative;
+    top: 0px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: #2196F3;
+    border-radius: 16px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    border: 0;
+}
+
+.submit:hover{
+    background-color: #fff;
+    color: #2196F3;
+    border: solid 2px #2196F3;
+}

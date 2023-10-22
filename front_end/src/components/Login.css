@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-color: lavender;
+
+}
+
+.logo_box{
+    background-color: lavender;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.trustlink{
+    font-family: "Times New Roman";
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.phrase{
+    font-family: Inter, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: #3a3b45;
+}
+
+.sui {
+    padding: 10px;
+    width: auto;
+    height: 50px;
+    font-family: Inter, sans-serif;
+    color: #3a3b45;
+    position: absolute;
+    font-weight: 200;
+}
+
+.sui_logo{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.get_started{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 40px;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: cornflowerblue;
+
+}
+
+.get_started:hover{
+    background-color: aliceblue;
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+}
+
+.img_align{
+    padding: 5%;
+}
+
+.button_align{
+    padding: 10%;
+}
+
+.wallet{
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}

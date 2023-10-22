@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.envelope{
+    background-color: aliceblue;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.w3{
+    background-color: #24126A;;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.sidebar{
+    height: 100%;
+    width: 200%;
+    background-color: #24126A;;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    color: aliceblue;
+}
+
+.trustlinks_pic{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.main_btn{
+    padding: 50px;
+}
+
+.start_contract{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 40px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    color: cornflowerblue;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid cornflowerblue;
+    justify-content: space-between;
+
+}
+
+.plus_button{
+    margin-left: auto;
+}
+
+.start_contract:hover{
+    background-color: darkblue;
+    color: aliceblue;
+    border: 2px solid cornflowerblue;
+}
+
+.wallet{
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
