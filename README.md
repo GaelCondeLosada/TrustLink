@@ -67,19 +67,19 @@ The primary use case for this code is to facilitate trusted exchanges between pa
 
 ### Available Functions 
 
-- new_contract_descriptor: Create a new contract descriptor.
+- new_contract_descriptor: Create a new contract descriptor and transfers the ownership it to the sender.
 - validate_step: Validate the current step and create a new step for adding requirements and actions.
-- add_requirement_to_description_step: Add a requirement to the current step.
-- add_action_to_description_step: Add an action to the current step.
-- add_expiration_action_to_description: Add an expiration action.
-- add_expiration_time_to_description: Set the expiration time.
+- add_requirement_to_description_step: Add a requirement to the current step of the contract descriptor.
+- add_action_to_description_step: Add an action to the current step of the contract descriptor.
+- add_expiration_action_to_description: Add an expiration action to the contract descriptor.
+- add_expiration_time_to_description: Set the expiration time to the contract descriptor.
 - new_contract: Create a new contract from a contract descriptor.
-- put_item: Add an item to the contract.
-- take_item: Retrieve an item from the contract.
-- borrow_item_mut: Borrow a mutable reference to an item inside the contract.
-- lock_item: Lock an item inside the contract.
-- is_item_locked: Check if an item in the contract is locked.
+- put_item: Add an item to the contract. Throws error if the rules of the contracted aren't met.
+- take_item: Retrieve an item from the contract. Throws error if the rules of the contracted aren't met.
+- borrow_item_mut: Borrow a mutable reference to an item inside the contract. Allows user to still use the item reference while item handled by contract. Throws error if the rules of the contracted aren't met.
+- lock_item: Lock an item inside the contract. Throws error if the rules of the contracted aren't met.
+- is_item_locked: Check if an item in the contract is locked. 
 - contains_item: Check if the contract contains a specific item.
-- confirm_step: Confirm a step in the contract.
-- confirmate_step_with_key: Confirm a step using a key.
-- cancel_contract: Cancel the contract and return items to their owners.
+- confirm_step: Confirm a step in the contract. Throws error if the rules of the contracted aren't met.
+- confirmate_step_with_key: Confirm a step using a key. Throws error if the rules of the contracted aren't met.
+- cancel_contract: Cancel the contract and return items to their owners. 
