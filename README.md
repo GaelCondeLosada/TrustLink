@@ -41,6 +41,11 @@ The primary use case for this code is to facilitate trusted exchanges between pa
 - cancel_contract: Cancel the contract and return items to their owners.
 
 ## Structures
+
+![Image 22-10-2023 at 08 56](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/15eb4dc3-b017-4a4a-96f9-acfe82d94adc)
+![Image 22-10-2023 at 09 13](https://github.com/GaelCondeLosada/TrustLink/assets/100673718/f14667f3-d213-402b-898c-7c0d7059636a)
+
+
 ### TrustedContract
 - Represents the main contract structure.
 - Manages a trusted exchange.
