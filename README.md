@@ -1,4 +1,4 @@
-**This project was done in 24h for the Sui Blockchain Hackaton.**  
+**This project was done in 24h for the Sui Blockchain Hackaton 2023.**  
 
 ## TrustLink 
 
